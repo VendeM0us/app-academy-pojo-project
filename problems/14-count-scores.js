@@ -33,7 +33,6 @@ function countScores(people) {
   people.forEach(function(person) {
     let {name, score} = person;
     (name in scores) ? scores[name] += score : scores[name] = score;
-    
   });
 
   return scores;
